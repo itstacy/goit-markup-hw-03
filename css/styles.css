@@ -17,12 +17,18 @@ h1,h2,h3,h4,h5,h6 p {
 a { 
     text-decoration: none;
 }
+img {
+    display: block;
+}
 /* #region Header */
 .header {
+    border-bottom: 1px solid #e7e9fc;
 }
 .header .container {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #e7e9fc;
+    margin: 0 auto;
 }
 
 .container {
@@ -59,10 +65,13 @@ a {
     display: flex;
     gap: 40px;
 }
-
 .menu-item {
+    margin-right: 40px; /* Відступ між пунктами меню */
 }
 
+.menu-item:last-child {
+    margin-right: 0; /* Обнулення відступу для останнього пункту */
+}
 .menu-link {
     font-weight: 500;
     font-size: 16px;
@@ -115,8 +124,7 @@ a {
     background-color: #2E2F42;
     width: 1440px;
     height: 600px;
-    padding-top: 188;
-    padding-bottom: 188;
+    padding: 188px 0
 }
 .container-hero {
     padding-top: 188px;
@@ -151,6 +159,9 @@ a {
     padding: 16px 32px 16px 32px;
     border: none;
     border-radius: 4px;
+    display: block; /* Додаємо display: block для центрування */
+    margin-left: auto; /* Центруємо кнопку */
+    margin-right: auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -180,6 +191,17 @@ a {
     letter-spacing: 0.02em;
     color: #2e2f42;
     background-color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 .small-text {
     line-height: 1.5;
@@ -253,7 +275,7 @@ a {
     gap: 48px 24px;
 }
 .portfolio-item {
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px) / 3); /* Ширина для першого пункту списку */
 }
 .portfolio-box {
     padding: 32px 16px;
