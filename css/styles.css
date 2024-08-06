@@ -103,9 +103,6 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.address-item {
-    margin-right: 40px; /* Відступ між пунктами списку */
-}
 
 .contact-link {
     font-size: 16px;
@@ -205,12 +202,12 @@ img {
     height: 1px;
     margin: -1px;
     padding: 0;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-.second-title.visually-hidden {
-    @extend .visually-hidden;
 }
 .small-text {
     line-height: 1.5;
