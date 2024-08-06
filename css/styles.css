@@ -103,15 +103,21 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+.address-item {
+    margin-right: 40px; /* Відступ між пунктами списку */
+}
+
 .contact-link {
     font-size: 16px;
     line-height: 1.5;
     color: #434455;
     text-decoration: none; /* Видалення підкреслення */
-    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
 }
-
+.contact-link:last-child {
+    margin-right: 0; /* Обнулення відступу для останнього пункту */
+}
 .contact-link:hover,
 .contact-link:focus {
     color: #404bbf;
@@ -202,6 +208,9 @@ img {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+.second-title.visually-hidden {
+    @extend .visually-hidden;
 }
 .small-text {
     line-height: 1.5;
