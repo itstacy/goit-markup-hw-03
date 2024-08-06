@@ -99,7 +99,7 @@ img {
 }
 .address-link {
     display: flex;
-    gap: 24px;
+    gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
